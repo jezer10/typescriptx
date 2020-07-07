@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" />
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="pure-g">
+        <div class="pure-u-xl-8-24">
+            <form id="formulario" class="pure-form pure-form-aligned">
+                <fieldset>
+                    <div class="pure-control-group">
+                        <label for="aligned-name">ISBN</label>
+                        <input type="text" id="isbn" placeholder="ISBN" />
+                        <span class="pure-form-message-inline"></span>
+                    </div>
+                    <div class="pure-control-group">
+                        <label for="aligned-password">Titulo</label>
+                        <input type="text" id="titulo" placeholder="Titulo" />
+                    </div>
+                    <div class="pure-control-group">
+                        <label for="aligned-email">Autor</label>
+                        <input type="text" id="autor" placeholder="Autor" />
+                    </div>
+                    <div class="pure-control-group">
+                        <label for="aligned-foo">Editorial</label>
+                        <input type="text" id="editorial" placeholder="Editorial" />
+                    </div>
+                    <div class="pure-control-group">
+                        <label for="aligned-foo">Numero de paginas</label>
+                        <input type="text" id="npaginas" placeholder="Paginas" />
+                    </div>
+                    <div class="pure-controls">
+                        <button type="submit" id="submit" class="pure-button button-xlarge pure-button">Registrar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="pure-u-xl-16-24">
+            <table class="pure-table pure-table-horizontal tablalarga">
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>ISBN</th>
+                        <th>Titulo</th>
+                        <th>Autor</th>
+                        <th>Editorial</th>
+                        <th>Paginas</th>
+                    </tr>
+                </thead>
+                <tbody id="tablabody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="biblioteca.js"></script>
+</body>
+</html>
